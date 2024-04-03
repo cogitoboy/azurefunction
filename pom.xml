@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <azure.functions.maven.plugin.version>1.18.0</azure.functions.maven.plugin.version>
         <azure.functions.java.library.version>1.4.2</azure.functions.java.library.version>
-        <functionAppName>azure-functions-sample</functionAppName>
+        <functionAppName>azure-functions-sample-334324rfkjfe3</functionAppName>
         <functionAppRegion>westus</functionAppRegion>
         <functionResourceGroup>java-functions-group</functionResourceGroup>
     </properties>
@@ -58,7 +58,9 @@
                 <groupId>com.microsoft.azure</groupId>
                 <artifactId>azure-functions-maven-plugin</artifactId>
                 <version>${azure.functions.maven.plugin.version}</version>
+
                 <configuration>
+                    <deploymentType>zip</deploymentType>
                     <!-- function app name -->
                     <appName>${functionAppName}</appName>
                     <!-- function app resource group -->
